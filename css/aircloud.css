@@ -1344,3 +1344,27 @@ pre .javascript .function {
 .gitment-comment p {
   text-indent: 0;
 }
+/* 针对 AirCloud 主题的全局歌词样式 */
+.aplayer.aplayer-fixed .aplayer-lrc {
+  display: block !important; /* 强制显示 LRC */
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 80px !important;    /* 避开左侧的播放小球 */
+  z-index: 10000 !important;
+  height: 40px !important;   /* 限制高度为一行 */
+  background: rgba(255, 255, 255, 0.8) !important; /* 加上半透明背景，防止挡住正文 */
+  border-radius: 20px 20px 0 0;
+  width: auto !important;
+  max-width: calc(100% - 100px);
+  padding: 0 10px;
+}
+/* 微调歌词文字样式 */
+.aplayer.aplayer-fixed .aplayer-lrc p {
+  font-size: 14px !important;
+  color: #666 !important;
+  line-height: 40px !important;
+  margin: 0 !important;
+  text-align: left !important;
+  opacity: 1 !important;
+  font-weight: bold;
+}
