@@ -222,15 +222,13 @@ window.addEventListener('load', function() {
         window.ap = new APlayer({
             container: document.getElementById('aplayer'),
             fixed: true,
-            lrcType: 3,
+            lrcType: 0,
             audio: [{
                 name: '咏春',
                 artist: '七朵组合',
                 url: '/music/yongchun.mp3',
                 // 换一个更稳定的封面链接
                 cover: 'https://p2.music.126.net/H9v_v46I2Y-YvS-mH8Vp6Q==/109951172859327838.jpg',
-                // 歌词改为直接调用网易云原始接口，规避部分代理拦截
-                lrc: 'https://music.163.com/api/song/media?id=372359'
             }]
         });
 

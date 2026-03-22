@@ -141,30 +141,26 @@
     </div>
     
     <div class="index-middle">
-        <div class="post-meta">
-        <div class="meta-row">
-            <span class="attr">Post：<span>2026-03-22 12:43:15</span></span>
-            <span class="attr" style="margin-left: 15px; color: #e96900; font-weight: 500;">
-                Updated：<span>2026-03-22 15:14:16</span>
-            </span>
-        </div>
+        <div class="post-container">
+    <div class="post-title">
+        JLPT
+    </div>
 
+    <div class="post-meta">
+        <div class="meta-row">
+            <span class="attr">Post: 2026-03-22 12:43:15</span>
+            <span class="attr" style="margin-left: 15px; color: #e96900;">Updated: 2026-03-22 15:14:16</span>
+        </div>
         <div class="meta-row" style="margin-top: 8px;">
-            
-            <span class="attr">Tags：/
-                
-                <a class="tag" href="/tags/#学习" title="学习">学习</a>
-                <span>/</span>
-                
-            </span>
-            
-            <span class="attr" style="margin-left: 10px;">Visit：<span id="busuanzi_value_page_pv"></span></span>
-            
-            <span class="attr" style="margin-left: 15px;">
-                Edits：<span>1</span> 次
-            </span>
+            <span class="attr">Tags: <a class="tag-none-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习<span class="tag-none-count">2</span></a></span>
+            <span class="attr" style="margin-left: 10px;">Visit: <span id="busuanzi_value_page_pv"></span></span>
+            <span class="attr" style="margin-left: 15px;">Edits: 1 次</span>
         </div>
     </div>
+
+    <div class="post-content">
+          </div>
+</div>
     </div>
 </div>
 
@@ -226,15 +222,13 @@ window.addEventListener('load', function() {
         window.ap = new APlayer({
             container: document.getElementById('aplayer'),
             fixed: true,
-            lrcType: 3,
+            lrcType: 0,
             audio: [{
                 name: '咏春',
                 artist: '七朵组合',
                 url: '/music/yongchun.mp3',
                 // 换一个更稳定的封面链接
                 cover: 'https://p2.music.126.net/H9v_v46I2Y-YvS-mH8Vp6Q==/109951172859327838.jpg',
-                // 歌词改为直接调用网易云原始接口，规避部分代理拦截
-                lrc: 'https://music.163.com/api/song/media?id=372359'
             }]
         });
 
