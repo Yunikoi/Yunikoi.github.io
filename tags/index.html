@@ -40,22 +40,34 @@
 
 <meta name="generator" content="Hexo 8.1.1"></head>
 
-<link rel="stylesheet" href="https://lib.baomitu.com/aplayer/1.10.1/APlayer.min.css">
-<script src="https://lib.baomitu.com/aplayer/1.10.1/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+<div id="aplayer"></div>
 
-<meting-js
-    server="netease"
-    type="playlist"
-    id="17848318797"
-    fixed="true"
-    mini="true"
-    lrc-type="3"
-    theme="#e91e63"
-    order="random"
-    list-folded="true"
-    autoplay="false">
-</meting-js>
+<script>
+  const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,          // 吸底模式
+    lrcType: 3,           // 加载外部歌词
+    order: 'list',        // 循环模式：'list'（列表循环）或 'random'（随机）
+    loop: 'all',          // 循环范围：'all'（全部循环）
+    audio: [
+      {
+        name: '咏春',
+        artist: '七朵组合',
+        url: '/music/yongchun.mp3',   // 对应 source/music/yongchun.mp3
+        cover: '/images/avatar.jpg',   // 对应 source/images/avatar.jpg
+        lrc: 'https://api.i-meto.com/meting/api?server=netease&type=lrc&id=372359' // 直接用接口抓歌词
+      },
+      {
+        name: '你的第二首歌名',
+        artist: '歌手名',
+        url: '/music/second_song.mp3', // 对应 source/music/second_song.mp3
+        cover: '/images/avatar.jpg',
+        lrc: 'https://api.i-meto.com/meting/api?server=netease&type=lrc&id=对应歌曲ID'
+      }
+      // 想加更多歌，就按上面的格式继续复制 {} 里的内容
+    ]
+  });
+</script>
 
 <body>
 
