@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2026/03/22/%E9%9B%B6%E7%A2%8E%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%AE%B0%E5%BD%95/"/>
-      <url>/2026/03/22/%E9%9B%B6%E7%A2%8E%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%AE%B0%E5%BD%95/</url>
-      
-        <content type="html"><![CDATA[<p>title: 平常学习的一些记录<br>date:<br>tags:学习</p><h1 id="零碎学习的记录"><a href="#零碎学习的记录" class="headerlink" title="零碎学习的记录"></a>零碎学习的记录</h1><p><a href="">博客布置</a></p><h2 id="1-博客布置"><a href="#1-博客布置" class="headerlink" title="1.博客布置"></a>1.博客布置</h2><h3 id="一、我的亚丝娜去哪了？"><a href="#一、我的亚丝娜去哪了？" class="headerlink" title="一、我的亚丝娜去哪了？"></a>一、我的亚丝娜去哪了？</h3><p>本人在部署博客时，出现头像上传失败的问题，如图示：</p><img src="D:\YuniBlog\YuniBlog\source\img\Typora\image-20260322150452011.png" alt="image-20260322150452011" style="zoom:25%;" /><p>此时鼠标右键点击浏览器页面选择检查</p><img src="D:\YuniBlog\YuniBlog\source\img\Typora\image-20260322150506933.png" alt="image-20260322150506933" style="zoom:25%;" /><p>然后右侧就会出现对应代码</p><img src="D:\YuniBlog\YuniBlog\source\img\Typora\image-20260322150531153.png" alt="image-20260322150531153" style="zoom:25%;" /><p>由图可知我是因为src里多了一个&#x2F;，故找到源码修改即可</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>JLPT</title>
       <link href="/2026/03/22/JLPT/"/>
       <url>/2026/03/22/JLPT/</url>
