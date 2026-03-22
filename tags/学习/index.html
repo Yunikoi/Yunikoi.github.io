@@ -50,13 +50,14 @@
     order: 'list',        // 循环模式：'list'（列表循环）或 'random'（随机）
     loop: 'all',          // 循环范围：'all'（全部循环）
     audio: [
-      {
-        name: '咏春',
-        artist: '七朵组合',
-        url: '/music/yongchun.mp3',   // 对应 source/music/yongchun.mp3
-        cover: '/images/avatar.jpg',   // 对应 source/images/avatar.jpg
-        lrc: 'https://api.i-meto.com/meting/api?server=netease&type=lrc&id=372359' // 直接用接口抓歌词
-      },
+       {
+         name: '咏春',
+         artist: '七朵组合',
+         url: '/music/yongchun.mp3', // 你的本地完整版音频
+         // 关键：这是《咏春》专辑《咏春》的官方封面地址
+         cover: 'https://p1.music.126.net/H9v_v46I2Y-YvS-mH8Vp6Q==/109951172859327838.jpg',
+         lrc: 'https://api.i-meto.com/meting/api?server=netease&type=lrc&id=372359'
+       }
       {
         name: '你的第二首歌名',
         artist: '歌手名',
