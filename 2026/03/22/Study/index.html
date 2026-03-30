@@ -115,7 +115,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#STUDY"><span class="toc-text">STUDY</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Blog%E2%80%94%E2%80%94Setting"><span class="toc-text">1. Blog——Setting</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81My-Asuna"><span class="toc-text">一、My Asuna</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Post%E2%80%94%E2%80%94Pattern%E2%80%94%E2%80%94Setting"><span class="toc-text">二、Post——Pattern——Setting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81Image%E2%80%94%E2%80%94Softening"><span class="toc-text">三、Image——Softening</span></a></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#STUDY"><span class="toc-text">STUDY</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Blog%E2%80%94%E2%80%94Setting"><span class="toc-text">Blog——Setting</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#My-Asuna"><span class="toc-text">My Asuna</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Post%E2%80%94%E2%80%94Pattern%E2%80%94%E2%80%94Setting"><span class="toc-text">Post——Pattern——Setting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Image%E2%80%94%E2%80%94Softening"><span class="toc-text">Image——Softening</span></a></li></ol></li></ol></li></ol>
 </div>
     
 </div>
@@ -149,7 +149,7 @@
     <div class="post-meta">
         <div class="meta-row">
             <span class="attr">Post: 2026-03-22 15:14:16</span>
-            <span class="attr" style="margin-left: 15px; color: #e96900;">Updated: 2026-03-22 15:14:16</span>
+            <span class="attr" style="margin-left: 15px; color: #e96900;">Updated: 2026-03-30 10:31:20</span>
         </div>
         <div class="meta-row" style="margin-top: 8px;">
             <span class="attr">Tags: <a class="tag-none-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习<span class="tag-none-count">4</span></a></span>
@@ -159,15 +159,15 @@
     </div>
 
     <div class="post-content">
-        <h1 id="STUDY"><a href="#STUDY" class="headerlink" title="STUDY"></a>STUDY</h1><h2 id="1-Blog——Setting"><a href="#1-Blog——Setting" class="headerlink" title="1. Blog——Setting"></a>1. Blog——Setting</h2><hr>
-<h3 id="一、My-Asuna"><a href="#一、My-Asuna" class="headerlink" title="一、My Asuna"></a>一、My Asuna</h3><p>本人在部署博客时，出现头像上传失败的问题。此时鼠标右键点击浏览器页面选择“检查”，然后右侧就会出现对应代码。</p>
+        <h1 id="STUDY"><a href="#STUDY" class="headerlink" title="STUDY"></a>STUDY</h1><h2 id="Blog——Setting"><a href="#Blog——Setting" class="headerlink" title="Blog——Setting"></a>Blog——Setting</h2><hr>
+<h3 id="My-Asuna"><a href="#My-Asuna" class="headerlink" title="My Asuna"></a>My Asuna</h3><p>本人在部署博客时，出现头像上传失败的问题。此时鼠标右键点击浏览器页面选择“检查”，然后右侧就会出现对应代码。</p>
 <p>我是因为 <code>src</code> 里多了一个 <code>/</code>，故找到源码修改即可。</p>
 <hr>
-<h3 id="二、Post——Pattern——Setting"><a href="#二、Post——Pattern——Setting" class="headerlink" title="二、Post——Pattern——Setting"></a>二、Post——Pattern——Setting</h3><p>由于我想要在每个文件头都要一个统一模板，因此找到中 <code>scaffold/post.md</code> 修改源码。</p>
+<h3 id="Post——Pattern——Setting"><a href="#Post——Pattern——Setting" class="headerlink" title="Post——Pattern——Setting"></a>Post——Pattern——Setting</h3><p>由于我想要在每个文件头都要一个统一模板，因此找到中 <code>scaffold/post.md</code> 修改源码。</p>
 <p><img src="./../img/Typora/image-20260322155009943.png" alt="模板示例"></p>
 <p>此时通过 <code>hexo n &quot;Filename&quot;</code> 创建的文件就会自动带有我的模板前缀，以便于清晰管理。</p>
 <hr>
-<h3 id="三、Image——Softening"><a href="#三、Image——Softening" class="headerlink" title="三、Image——Softening"></a>三、Image——Softening</h3><p><img src="./../img/Typora/image-20260322155258717.png" alt="图像钝化示例"></p>
+<h3 id="Image——Softening"><a href="#Image——Softening" class="headerlink" title="Image——Softening"></a>Image——Softening</h3><p><img src="./../img/Typora/image-20260322155258717.png" alt="图像钝化示例"></p>
 <center>在页面中我的图像显得方方正正有点突兀，因此本人想“钝化”我的头像四角，使整个画面显得柔和一点。</center>
 
 <p><strong>软工视角：</strong><br>所谓的“钝化”，本质上是修改 CSS 的 <code>border-radius</code> 属性。在 AirCloud 主题中，找到对应的 <code>.avatar</code> 类并添加以下代码即可：</p>
