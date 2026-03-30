@@ -1412,3 +1412,41 @@ pre .javascript .function {
   font-size: 13px;
   color: #888;
 }
+/* --- 修复目录重叠与滚动问题 --- */
+
+/* 1. 给目录增加白色背景，防止文字堆叠穿透 */
+.toc-article {
+  background: #fff;
+  border-left: 1px solid #eee;
+  padding-bottom: 20px;
+  z-index: 10;
+}
+
+/* 2. 核心修复：重新定义固定定位逻辑 */
+.toc-fixed {
+  position: fixed !important;
+  /* 关键：top 设为 350px 左右，避开头像区域 */
+  top: 350px !important;
+  width: 240px;
+  /* 关键：计算剩余高度，超过后自动出现滚动条 */
+  max-height: calc(100vh - 380px) !important;
+  overflow-y: auto !important;
+  background: #fff;
+}
+
+/* 3. 美化滚动条（让长目录看起来不突兀） */
+.toc-fixed::-webkit-scrollbar {
+  width: 4px;
+}
+.toc-fixed::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 2px;
+}
+
+/* 4. 适配笔记本小屏幕（如果屏幕太矮，进一步压缩空间） */
+@media screen and (max-height: 700px) {
+  .toc-fixed {
+    top: 300px !important;
+    max-height: calc(100vh - 320px) !important;
+  }
+}

@@ -19,7 +19,7 @@
     function reHeightToc() {
         const toc = document.getElementById('toc');
         if (toc) {
-            toc.style.maxHeight = (document.documentElement.clientHeight - 20) + 'px';
+            toc.style.maxHeight = (document.documentElement.clientHeight - 350) + 'px';
             toc.style.overflowY = 'auto';
         }
     }
